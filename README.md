@@ -1,6 +1,4 @@
 # ProgramacionCompetitiva
-SHREK 2 COMPLETO LEGENDADO PT-BR
-
 Era uma vez, num reino
 
 muito, muito longe,
