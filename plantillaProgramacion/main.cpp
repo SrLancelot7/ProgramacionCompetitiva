@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<iostream>
 using namespace std;
 //antes de compilar cualquier cosa, acuerdate de guardar lo que cambiaste
 
