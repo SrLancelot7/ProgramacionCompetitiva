@@ -21,6 +21,7 @@ void dfs(int u){
 }
 
 int numConexiones(int V){
+    dfs_num.assign(V,0);
     int numCC=0;
     for (int i = 0; i < V; i++)
     {
@@ -36,7 +37,6 @@ int numConexiones(int V){
 int main(){
     int V = 6;
     AdjList.assign(V, vi());
-    dfs_num.assign(V,0);
 
     addEdge(0,2);
     addEdge(2,3);
