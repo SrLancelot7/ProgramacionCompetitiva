@@ -24,8 +24,8 @@ void process(int u){
     
 }
 
-int prim(int u){
-    process(u);
+int prim(){
+    process(0);
     int costo_total = 0;
     while (!pq.empty()){
         ii top = pq.top();
@@ -67,7 +67,7 @@ int main(){
         printf("\n\n");
     }
 
-    printf("peso total con prim: %d",prim(2));
+    printf("peso total con prim: %d",prim());
 
 
     
