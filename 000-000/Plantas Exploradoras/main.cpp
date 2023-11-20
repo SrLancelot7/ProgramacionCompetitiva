@@ -64,7 +64,16 @@ int main()
                 grid[i][j] = -1;
         }
 
-    printf("%d",BFSfloodFill(xi,yi,0)-1);
+    printf("%d",BFSfloodFill(xi,yi,0));
+    printf("\n");
+
+    for (int i = 0; i < MRow; i++){
+        for (int j = 0; j < MCol; j++){
+            printf("%3d",grid[i][j]);
+        }
+        printf("\n");
+    }
+
 
     return 0;
 }
