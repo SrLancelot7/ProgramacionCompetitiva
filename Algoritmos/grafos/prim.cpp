@@ -9,6 +9,18 @@ std::vector<vii> AdjList;
 vi prim_taken;
 std::priority_queue<ii> pq;
 
+void imprimir(){
+    for (int i = 0; i < AdjList.size(); i++)
+    {
+        printf("Nodo: %d\nVecinos: ",i);
+        for (int j = 0; j < AdjList[i].size(); j++)
+        {
+            printf("%d[p:%d] ",AdjList[i][j].first,AdjList[i][j].second);
+        }
+        printf("\n\n");
+    }
+}
+
 void addEdge(int u, int v,int p){
     AdjList[u].push_back(std::make_pair(v,p));
     AdjList[v].push_back(std::make_pair(u,p));
@@ -57,15 +69,7 @@ int main(){
     addEdge(5,6,3);
     addEdge(6,1,14);
 
-    for (int i = 0; i < AdjList.size(); i++)
-    {
-        printf("Nodo: %d\nVecinos: ",i);
-        for (int j = 0; j < AdjList[i].size(); j++)
-        {
-            printf("%d[p:%d] ",AdjList[i][j].first,AdjList[i][j].second);
-        }
-        printf("\n\n");
-    }
+    imprimir();
 
     printf("peso total con prim: %d",prim());
 
