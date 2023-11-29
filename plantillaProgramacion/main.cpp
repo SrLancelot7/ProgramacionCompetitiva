@@ -1,6 +1,4 @@
 #include<stdio.h>
-using namespace std;
-//antes de compilar cualquier cosa, acuerdate de guardar lo que cambiaste
 
 int main()
 {
