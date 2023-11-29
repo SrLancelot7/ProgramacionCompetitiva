@@ -1,0 +1,9 @@
+El camino a optimo a 1 es de largo 1 y no es robusto
+El camino a optimo a 2 es de largo 1 y no es robusto
+El camino a optimo a 3 es de largo 2 y es robusto
+El camino a optimo a 4 es de largo 2 y no es robusto
+El camino a optimo a 5 es de largo 3 y es robusto
+El camino a optimo a 6 es de largo 3 y no es robusto
+El camino a optimo a 7 es de largo 4 y es robusto
+El camino a optimo a 8 es de largo 4 y no es robusto
+El camino a optimo a 9 es de largo 5 y es robusto
