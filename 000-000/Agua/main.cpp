@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+    
+        // For getting input from input.txt file
+        freopen("input.txt", "r", stdin);
+    
+        // Printing the Output to output.txt file
+        freopen("output.txt", "w", stdout);
+    
+    #endif
+
+    int n;
+    scanf("%d",&n);
+    if(n < 0) printf("El agua estara en estado solido");
+    else if(n > 100) printf("El agua estara en estado gaseoso");
+    else printf("El agua estara en estado liquido");
+
+    return 0;
+}
