@@ -1,0 +1,4 @@
+Creciente
+Decreciente
+Ninguno
+Ninguno
