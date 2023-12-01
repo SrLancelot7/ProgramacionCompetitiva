@@ -1,0 +1,6 @@
+0000 es una clave de la suerte que suma 0
+0001 es una clave de la suerte que suma 1
+0010 es una clave de la suerte que suma 1
+0100 es una clave de la suerte que suma 1
+1000 es una clave de la suerte que suma 1
+9999 es una clave de la suerte que suma 36
