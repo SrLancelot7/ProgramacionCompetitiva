@@ -34,7 +34,12 @@ int main(){
         futbol[i] = e;
         while (in--){
             scanf("%d",&f);
-            addEdge(i,f-1);
+            if(f!=0){
+                addEdge(i,f-1);
+            }
+            else{
+                addEdge(i,f);
+            }
         }
     }
 
