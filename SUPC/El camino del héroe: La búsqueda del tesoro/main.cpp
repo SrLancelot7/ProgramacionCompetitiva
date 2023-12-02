@@ -24,6 +24,12 @@ int floodFill(int r,int c,char c1,char c2){
     }
     return ans; //retorna la cantidad de zonas rellenadas
 }
+/*
+0 0 total 0 ans = 210
+1 0 total 100 ans = 100
+0 1 total 10 ans = 110
+0 2 total 100 ans = 100
+*/
 
 
 int main()

@@ -39,6 +39,16 @@ int BFSfloodFill(int r,int c,int c1){
     return 100001;   
 }
 
+void imprimir(){
+    for (int i = 0; i < MRow; i++){
+        for (int j = 0; j < MCol; j++){
+            printf("%3d",grid[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
 int borrar(){
     for (int i = 0; i < MRow; i++)
         for (int j = 0; j < MCol; j++)
@@ -79,10 +89,14 @@ int main()
         scanf("%d %d",&a,&b);
         grid[a][b] = -1;
     }
-            
+
+    imprimir();
     rb = BFSfloodFill(bx,by,0);
+    imprimir();
     borrar();
+    imprimir();
     rn = BFSfloodFill(nx,ny,0);
+    imprimir();
 
     if(rn < rb) printf("Negro");
     else if(rn > rb) printf("Blanco");
