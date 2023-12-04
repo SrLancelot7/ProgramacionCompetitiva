@@ -5,7 +5,9 @@ char grid[12][12];
 
 void vertical(int x, int y,char tmp[]){
     for (int i = 0; i < 12; i++){
-        if(tmp[i] == '\0' && i + x > 12)
+        if(grid[x][i+y] != '.' && tmp[i] != grid[i+x][y] && tmp[i])
+            return;
+        if(tmp[i] == '\0' && i+x > 12)
             return;
         else
             break;
@@ -19,8 +21,12 @@ void vertical(int x, int y,char tmp[]){
 }
 void horizontal(int x, int y,char tmp[]){
     for (int i = 0; i < 12; i++){
-        if(tmp[i] != '\0' && i + y > 12)
+        if(grid[x][i+y] != '.' && tmp[i] != grid[x][i+y])
             return;
+        if(tmp[i] == '\0' && i+y > 12)
+            return;
+        else
+            break;
     }
     for (int i = 0; i < 12; i++){
         if(tmp[i] == '\0')
