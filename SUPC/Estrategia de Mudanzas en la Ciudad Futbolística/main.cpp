@@ -27,11 +27,10 @@ int main(){
     char e;
     scanf("%d",&V);
     AdjList.assign(V, vi());
-    futbol.assign(V, 'a');
 
     for (int i = 0; i < V; i++){
         scanf(" %c %d",&e,&in);
-        futbol[i] = e;
+        futbol.push_back(e);
         while (in--){
             scanf("%d",&f);
             if(f!=0){
@@ -44,7 +43,7 @@ int main(){
     }
 
     int total;
-    for (int i = 0; i < (int)AdjList.size(); i++){
+    for (int i = 0; i < V; i++){
         total = 0;
         for (int j = 0; j < (int)AdjList[i].size(); j++)
         {
@@ -52,7 +51,7 @@ int main(){
             if(futbol[v] != futbol[i])
                 total++;
         }
-        if(total > (int)AdjList[i].size()/2 && (int)AdjList[i].size() != 0)
+        if(total > (int)AdjList[i].size()/2)
             printf("%d ",i+1);
     }
     
