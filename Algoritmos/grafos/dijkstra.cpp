@@ -44,7 +44,12 @@ int main(){
         printf("\n\n");
     }
 
-    djks(3,0);
+    int nodoI = 0;
+    int distI = 0;
+
+    djks(nodoI,distI);
+    printf("La distancia desde el nodo %d al resto de los nodos \ncon una distancia inicial %d es d:\n",nodoI,distI);
+
     for (int i = 0; i < V; i++)
         printf("%d ",djks_dist[i]);
     printf("\n");
